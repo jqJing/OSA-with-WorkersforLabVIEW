@@ -17,7 +17,9 @@
 接着 考虑 Actor Framework  该框架确实可以满足需求，但是模型很是复杂，学习曲线陡峭，也不是最佳选择
 经过网上搜索 找到了 Workers for LabVIEW 这一框架，基本可以实现我的所有需求：
 
-![WorkersforLabVIEW](https://docs.workersforlabview.io/)
+[WorkersforLabVIEW](https://docs.workersforlabview.io/)
+![Static Badge](https://img.shields.io/badge/LabVIEW-Workers-brightgreen)
+
 优点：
 1. 模块化
 2. 扩展性强
