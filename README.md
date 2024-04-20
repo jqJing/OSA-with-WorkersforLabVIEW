@@ -13,12 +13,11 @@
     3. 高速采集 近实时采集（意味着生产者/消费者模式的必要性）
 
 ### 想法与尝试
-最初打算是 使用LVOOP面向对象方法  + 生产者/消费者 模型 实现对各个光谱仪的封装。但是着实不是一个简单的事情。其一，异步循环 队列消息机 （DQMH）不够模块化，程序较大时 整体框图依旧很乱，再者后续扩展性也不强
-接着 考虑 Actor Framework  该框架确实可以满足需求，但是模型很是复杂，学习曲线陡峭，也不是最佳选择
-经过网上搜索 找到了 Workers for LabVIEW 这一框架，基本可以实现我的所有需求：
+  最初打算是 使用LVOOP面向对象方法  + 生产者/消费者 模型 实现对各个光谱仪的封装。但是着实不是一个简单的事情。其一，异步循环 队列消息机 （DQMH）不够模块化，程序较大时 整体框图依旧很乱，再者后续扩展性也不强；接着 考虑 Actor Framework  该框架确实可以满足需求，但是模型很是复杂，学习曲线陡峭，也不是最佳选择。经过网上搜索 找到了 Workers for LabVIEW 这一框架，基本可以实现我的所有需求：
 
-[WorkersforLabVIEW](https://docs.workersforlabview.io/)
+
 ![Static Badge](https://img.shields.io/badge/LabVIEW-Workers-brightgreen)
+[WorkersforLabVIEW](https://docs.workersforlabview.io/)
 
 优点：
 1. 模块化
